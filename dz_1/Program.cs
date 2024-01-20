@@ -15,28 +15,22 @@ class UserInputToCompileForTest
     // maxRange - максимальная граница диапазона
     public static int CountItemsRange(int[] numbers, int minRange, int maxRange)
     {
-         //Введите сюда свое решение
-    
          int count = 0;  
          for (int i = 0; i < numbers.Length; i++)
-         
          {
-            if (numbers[i] > minRange && numbers[i] < maxRange) 
+            if (numbers[i] > minRange && numbers[i] < maxRange)
             {
-                count = count + 1;
+                count++;
             }
-            return count;
+           
          }
-      
+      return count;
     }
-
     
     public static void PrintResult(int[] array)
     {
         
-          //Введите сюда свое решение
-           
-          Console.WriteLine(CountItemsRange(array, 10,90));
+          Console.Write(CountItemsRange(array, 9, 91));
     }
 
 }
